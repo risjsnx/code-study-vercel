@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- This is a comment also there might be some cleanup needed -->
+<html lang="en">
+
+<head>
+    <!-- idk what it's doing here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku panduan HTML</title>
+
+    <!-- base tag can be used to use the specified link as the base url so you can embed an image multiple time without having to use the full url-->
+    <!--<base href="https://risjsnx.github.io/code-study"> -->
+
+    <!-- example usage of class in html -->
+    <style>
+    button {
+        padding: 15px 30px;
+        font-size: 16px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: darkblue;
+    }
+    aside {
+        width: 40%;
+        float: right;
+        background-color: green;
+        color: white;
+        padding: 5px;
+        margin: 10px;
+        height: 100px;
+    }
+    .green {
+        color: green;
+    }
+    </style>
+
+</head>
+<!-- Thanks Gemini for the <head> code -->
+
+<!-- isi dari website ini -->
+<body>
+    <!-- base for making an html site -->
+    <h1>Welcome to My Website</h1>
+    <h1 class="green">Welcome to My Website</h1>
+    <p>This is a simple paragraph of <br> <b>text</b> on your new HTML <sub>page.</sub></p>
+
+    <!-- heading type -->
+    <h1>Hello World from h1</h1>
+    <h2>Hello World from h2</h2>
+    <h3>Hello World from h3</h3>
+    <h4>Hello World from h4</h4>
+    <h5>Hello World from h5</h5>
+    <h6>Hello World from h6</h6>
+
+    <!-- text modification -->
+    <h2><em>Hello World from em</em></h2>
+    <h2><i>Hello World from i</i></h2>
+    <!-- <em> dan <i> itu hampir mirip cuma (saya lupa bagaimana bicaranya) -->
+    <h2><strong>Hello World from strong</strong></h2>
+    <h2><b>Hello World from b</b></h2>
+    <!-- <strong> dan <b> itu hampir mirip cuma (saya lupa bagaimana bicaranya) -->
+    <h2><small>Hello from small</small></h2>
+    <h2><mark>This text is highlighted for some purpose</mark></h2>
+    <h2><del>This webpage is fake</del> who said that </h2>
+    <h2>usage of break tag in line 1<br>line 2</h2>
+
+    <!-- sub/super script -->
+    <h2>3<sup>2</sup>=9</h2>
+    <h2>Jika X<sub>1</sub>=4 dan X<sub>2</sub>=5 maka X<sub>1</sub> * X<sub>2</sub> =20</h2>
+
+
+    <!-- add-on -->
+    <h2><abbr title="Hello World">Hover Me!</abbr></h2>
+
+    <!-- address tag is best use as footer -->
+    <address>
+        Organization Name: GeeksforGeeks<br>
+        Website: GeeksforGeeks.org<br>
+        Visit us:
+        GeeksforGeeks 710-B, Advant Navis Business Park,<br>
+        <!-- above text gets combined into 1 line so use br tags to create a new line -->
+    </address> <br>
+
+    <!-- href tag can be used for many more purpose like for linking a telephone number -->
+    <h2><a href="https://youtu.be/xMHJGd3wwZk?si=LUW4B5OCR6xRjp2O">Click me! I'm totally not a rickroll</a></h2>
+
+    <!-- audio tag can be use to play an audio (can be customized) -->
+    <div>
+        <audio controls>
+            <source src="../assets/audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- aside tag can be used to indicate a script as a sidebar -->
+    <aside>This is an aside tag</aside>
+
+    <!-- bdo tag can be used to make a line use a rtl or ltr formats -->
+    <bdo dir="ltr">read the below text from right to left</bdo><br>
+    <bdo dir="rtl">read the above text from left to right</bdo>
+
+    <!-- what i'm reading bro -->
+    <h1 id="count">0</h1>
+    <button onclick="count.innerHTML++" type="button">Click Me</button>
+    <button onclick="count.innerHTML=0" type="button">Reset</button>
+</body>
+</html>
+
+<!-- Credit to GeeksforGeeks for the tutorial 
+ ( yes there are still some i haven't added to here) -->
